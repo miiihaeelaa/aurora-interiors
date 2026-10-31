@@ -178,10 +178,8 @@
       </div>
     </section>
 
-<form action="https://formsubmit.co/contact@example.com" method="POST" style="max-width:600px;margin:35px auto;display:grid;gap:15px;">
-  <input type="hidden" name="_subject" value="Mesaj nou - AURORA INTERIORS">
-  <input type="hidden" name="_captcha" value="false">
-
+<form onsubmit="event.preventDefault(); alert('Acesta este un formular demonstrativ pentru portofoliul MP Creative Studio.');" style="max-width:600px;margin:35px auto;display:grid;gap:15px;">
+  
   <input type="text" name="name" placeholder="Numele tău" required
     style="padding:15px;border:1px solid #d7c8b6;border-radius:4px;font:inherit;">
 
@@ -199,6 +197,10 @@
     TRIMITE MESAJUL
   </button>
 </form>
+
+<p style="text-align:center;font-size:13px;color:#806f60;margin-top:12px;">
+  Formular demonstrativ – proiect de portofoliu MP Creative Studio.
+</p>
 
     <section class="contact" id="contact">
       <div class="eyebrow">Contact</div>
