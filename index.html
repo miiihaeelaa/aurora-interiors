@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Interiors | Design Interior</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #F7F4EF;
+      --brown: #49392F;
+      --gold: #B49A76;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--brown);
+      font-family: 'DM Sans', sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 7%;
+      background: var(--cream);
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+    nav { display: flex; gap: 26px; flex-wrap: wrap; }
+    nav a {
+      color: var(--brown);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .hero {
+      min-height: 650px;
+      background:
+        linear-gradient(90deg, rgba(28,22,17,.72), rgba(28,22,17,.12)),
+        url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85')
+        center/cover;
+      display: flex;
+      align-items: center;
+      padding: 8%;
+      color: white;
+    }
+    .hero-content { max-width: 650px; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+    }
+    h1 { font-size: clamp(42px, 6vw, 76px); line-height: 1.12; }
+    h2 { font-size: clamp(32px, 4vw, 48px); }
+    p { line-height: 1.8; }
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      margin-top: 22px;
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    section { padding: 90px 8%; }
+    .intro { max-width: 850px; margin: auto; text-align: center; }
+    .services { background: #EEE8DF; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 35px;
+    }
+    .card {
+      background: white;
+      padding: 36px;
+    }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .portfolio-grid img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+    }
+    .contact {
+      background: var(--brown);
+      color: white;
+      text-align: center;
+    }
+    footer {
+      padding: 25px;
+      text-align: center;
+      font-size: 12px;
+    }
+    @media(max-width: 768px) {
+      header { flex-direction: column; gap: 20px; }
+      nav { justify-content: center; gap: 14px; }
+      .hero { min-height: 540px; }
+      section { padding: 60px 6%; }
+      .cards, .portfolio-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AURORA INTERIORS</div>
+    <nav>
+      <a href="#acasa">Acasă</a>
+      <a href="#despre">Despre noi</a>
+      <a href="#servicii">Servicii</a>
+      <a href="#portofoliu">Portofoliu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="acasa">
+      <div class="hero-content">
+        <div class="eyebrow">Design interior & amenajări</div>
+        <h1>Spații care inspiră. Design care rămâne.</h1>
+        <p>Transformăm fiecare interior într-o expresie a eleganței, confortului și personalității.</p>
+        <a class="btn" href="#portofoliu">DESCOPERĂ PROIECTELE</a>
+      </div>
+    </div>
+
+    <section id="despre">
+      <div class="intro">
+        <div class="eyebrow">Despre noi</div>
+        <h2>Eleganță în fiecare detaliu</h2>
+        <p>Aurora Interiors este un studio demonstrativ de design interior, dedicat creării unor spații armonioase, funcționale și rafinate.</p>
+      </div>
+    </section>
+
+    <section class="services" id="servicii">
+      <div class="eyebrow">Ce oferim</div>
+      <h2>Serviciile noastre</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Design rezidențial</h3>
+          <p>Concepte personalizate pentru apartamente și case.</p>
+        </div>
+        <div class="card">
+          <h3>Amenajări comerciale</h3>
+          <p>Interioare memorabile pentru spații de business.</p>
+        </div>
+        <div class="card">
+          <h3>Consultanță în design</h3>
+          <p>Recomandări pentru culori, mobilier și materiale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofoliu">
+      <div class="eyebrow">Inspirație</div>
+      <h2>Portofoliu</h2>
+      <div class="portfolio-grid">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Interior modern">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Living elegant">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Amenajare contemporană">
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">Contact</div>
+      <h2>Hai să creăm ceva frumos</h2>
+      <p>Descoperă cum poate prinde viață spațiul tău ideal.</p>
+      <a class="btn" href="mailto:contact@example.com">CONTACTEAZĂ-NE</a>
+    </section>
+  </main>
+
+  <footer>© 2026 AURORA INTERIORS · Proiect demonstrativ MP Creative Studio</footer>
+</body>
+</html>
